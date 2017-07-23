@@ -1,0 +1,31 @@
+insert into opiekun values (null, 'jazz', 'Jan', 'Kowalski', 0);
+
+insert into opiekun values (null, 'muzyka elektroniczna', 'Anna', 'Nowak', 0);
+
+insert into opiekun values (null, 'rock', 'Adam', 'Kowalski', 0);
+
+insert into opiekun values (null, 'pop', 'Wojciech', 'Zawadzki', 0);
+
+insert into opiekun values (null, 'disco polo', 'Piotr', 'Wisniewski', 0);
+
+insert into opiekun values (null, 'hip-hop', 'Zofia', 'Jastrzebska', 0);
+
+insert into opiekun values (null, 'metal', 'Katarzyna', 'Misiak', 0);
+
+insert into opiekun values (null, 'techno', 'Marta', 'Groszewska', 0);
+
+insert into opiekun values (null, 'country', 'Maciej', 'Kujawa', 0);
+
+insert into opiekun values (null, 'blues', 'Wojciech', 'Brzozowski', 0);
+
+insert into opiekun values (null, 'reggae', 'Pawel', 'Krajewski', 0);
+
+insert into opiekun values (null, 'muzyka instrumentalna', 'Anna', 'Osinska', 0);
+
+insert into opiekun values (null, 'folk', 'Grzegorz', 'Gajewski', 0);
+
+insert into opiekun values (null, 'new-wave', 'Agnieszka', 'Pietrzak', 0);
+
+insert into opiekun values (null, 'muzyka alternatywna', 'Aleksandra', 'Osik', 0);
+insert into opiekun values (null, 'trip-hop', 'Paulina', 'Grzybowska', 0); 
+insert into opiekun values (null, 'muzyka niezalezna', 'Andrzej', 'Kruk', 0);

@@ -1,0 +1,79 @@
+insert into zespoly values (null, 'Emancipator', 2, 0);
+
+insert into zespoly values (null, 'Twin Shadow', 14, 0);
+
+insert into zespoly values (null, 'Archive', 15, 0);
+
+insert into zespoly values (null, 'Flunk', 16, 0);
+
+insert into zespoly values (null, 'Massive Attack', 16, 0);
+
+insert into zespoly values (null, 'Royksopp', 2, 0);
+
+insert into zespoly values (null, 'Regina Spector', 17, 0);
+
+insert into zespoly values (null, 'Parov Stelar', 2, 0);
+
+insert into zespoly values (null, 'Sonata Arctica', 7, 0);
+
+insert into zespoly values (null, 'Kings of Leon', 3, 0);
+
+insert into zespoly values (null, 'Evergrey', 7, 0);
+
+insert into zespoly values (null, 'Yeasayes', 17, 0);
+
+insert into zespoly values (null, 'Olafur Arnalds', 12, 0);
+
+insert into zespoly values (null, 'Muse', 3, 0);
+
+insert into zespoly values (null, 'In Flames', 7, 0);
+
+insert into zespoly values (null, 'Lao Che', 3, 0);
+
+insert into zespoly values (null, 'M83', 2, 0);
+
+insert into zespoly values (null, 'Razorlight', 15, 0);
+
+insert into zespoly values (null, 'Michael Jackson', 4, 0);
+
+insert into zespoly values (null, 'Frnz Ferdinand', 17, 0);
+
+insert into zespoly values (null, 'Arctic Monkeys', 17, 0);
+
+insert into zespoly values (null, 'Stateless', 16, 0);
+
+insert into zespoly values (null, 'The Streets', 6, 0);
+
+insert into zespoly values (null, 'The Libertines', 15, 0);
+
+insert into zespoly values (null, 'Th Black Keys', 10, 0);
+
+insert into zespoly values (null, 'Datarock', 2, 0);
+
+insert into zespoly values (null, 'Dry the River', 13, 0);
+
+insert into zespoly values (null, 'I Blame Coco', 4, 0);
+
+insert into zespoly values (null, 'Queens of the Stone Age', 3, 0);
+
+insert into zespoly values (null, 'Firewind', 7, 0);
+
+insert into zespoly values (null, 'Matisyahu', 11, 0);
+
+insert into zespoly values (null, 'Chromeo', 2, 0);
+
+insert into zespoly values (null, 'Zbigniew Preisner', 12, 0);
+
+insert into zespoly values (null, 'Hurts', 14, 0);
+
+insert into zespoly values (null, 'Tricky', 16, 0);
+
+insert into zespoly values (null, 'Brodka', 4, 0);
+
+insert into zespoly values (null, 'Michal Urbaniak', 1, 0);
+
+insert into zespoly values (null, 'Leszek Mozdzer', 1, 0);
+
+insert into zespoly values (null, 'Boys', 5, 0);
+
+insert into zespoly values (null, 'Moderat', 8, 0);

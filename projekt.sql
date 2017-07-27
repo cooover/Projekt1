@@ -1,13 +1,13 @@
-#create database wytwornia_plytowa;
-#use wytwornia_plytowa;
+create database wytwornia_plytowa;
+use wytwornia_plytowa;
 
-drop view wyswietl_opiekuna;
-drop view czyj_album;
-drop view najpopularniejszy_album;
-drop table sprzedaz;
-drop table albumy;
-drop table zespoly;
-drop table opiekun;
+#drop view wyswietl_opiekuna;
+#drop view czyj_album;
+#drop view najpopularniejszy_album;
+#drop table sprzedaz;
+#drop table albumy;
+#drop table zespoly;
+#drop table opiekun;
 
 create table opiekun (id_o int not null auto_increment, imie_o text, nazwisko text, mail_o text, haslo_o text, ilosc_zespolow int not null, primary key (id_o));
 create table zespoly (id_z int not null auto_increment, nazwa_z text not null, id_o int not null, gatunek text, mail_z text, haslo_z text, ilosc_a int not null, primary key (id_z), foreign key (id_o) references opiekun(id_o));

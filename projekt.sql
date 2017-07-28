@@ -1,13 +1,13 @@
-create database wytwornia_plytowa;
-use wytwornia_plytowa;
+#create database wytwornia_plytowa;
+#use wytwornia_plytowa;
 
-#drop view wyswietl_opiekuna;
-#drop view czyj_album;
-#drop view najpopularniejszy_album;
-#drop table sprzedaz;
-#drop table albumy;
-#drop table zespoly;
-#drop table opiekun;
+drop view wyswietl_opiekuna;
+drop view czyj_album;
+drop view najpopularniejszy_album;
+drop table sprzedaz;
+drop table albumy;
+drop table zespoly;
+drop table opiekun;
 
 create table opiekun (id_o int not null auto_increment, imie_o text, nazwisko text, mail_o text, haslo_o text, ilosc_zespolow int not null, primary key (id_o));
 create table zespoly (id_z int not null auto_increment, nazwa_z text not null, id_o int not null, gatunek text, mail_z text, haslo_z text, ilosc_a int not null, primary key (id_z), foreign key (id_o) references opiekun(id_o));
@@ -104,7 +104,7 @@ select * from wyswietl_opiekuna;
 select * from czyj_album;
 select * from najpopularniejszy_album;
  # wyswietla nazwy zespolow przy albumach w kolejnosci od najlepiej sie sprzedajacego:
-select czyj_album.nazwa_a, suma, nazwa_z from najpopularniejszy_album, czyj_album where czyj_album.id_a = najpopularniejszy_album.id_a order by suma desc;
+select czyj_album.nazwa_a, suma, nazwa_z, plytyCD from najpopularniejszy_album, czyj_album where czyj_album.id_a = najpopularniejszy_album.id_a order by suma desc;
 # wyswietla albumy wraz z nazwa zespolu w kolejnosci od najwiekszej ilosci sprzedanych
 #select nazwa_z, nazwa_a, plytyCD, winyl, s_cyfrowa, suma from albumy natural left join zespoly natural right join najpopularniejszy_album order by suma desc;
 # wyswietla albumy wraz z nazwami zespolow od najswiezszego:
@@ -113,3 +113,5 @@ select nazwa_a, nazwa_z, data_wydania from albumy natural left join zespoly orde
 select nazwa_a, nazwa_z, data_wydania from albumy natural left join zespoly where nazwa_z = 'Lao Che' order by data_wydania desc;
 # wyswietla ilosc albumow wydanych przez zespoly (w razie gdyby nie było triggera)
 select count(*) as ilosc_albumow, nazwa_z from albumy natural left join zespoly group by nazwa_z;
+select nazwa_z, nazwa_a, plytyCD from zespoly, albumy, sprzedaz where zespoly.id_z = albumy.id_z and albumy.id_a = sprzedaz.id_a;
+select nazwa_z, nazwa_a, plytyCD from zespoly natural join albumy natural join sprzedaz;

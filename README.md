@@ -1,2 +1,2 @@
-Baza przechowuje informacje o zespo³ach bêd¹cych pod opiek¹ wytwórni p³ytowej.
-Dostêp do bazy maj¹ zarówno opiekunowie jak i same zespo³y. Opiekun mo¿e przegl¹daæ wszystkie dane zawarte w bazie, dodawaæ nowe zespo³y jak i modyfikowaæ informacje w niej zawarte. Zespó³ ma dostêp jedynie do przegl¹dania danych z bazy.
+Baza przechowuje informacje o zespoÅ‚ach bÄ™dÄ…cych pod opiekÄ… wytwÃ³rni pÅ‚ytowej.
+DostÄ™p do bazy majÄ… zarÃ³wno opiekunowie jak i same zespoÅ‚y. Opiekun moÅ¼e przeglÄ…daÄ‡ wszystkie dane zawarte w bazie, dodawaÄ‡ nowe zespoÅ‚y jak i modyfikowaÄ‡ informacje w niej zawarte. ZespÃ³Å‚ ma dostÄ™p jedynie do przeglÄ…dania danych z bazy.

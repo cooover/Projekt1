@@ -1,13 +1,13 @@
-insert into opiekun values (null, 'Jan', 'Kowalski', 'j.kowalski@gmail.com', null, 0);
+insert into opiekun values (null, 'Jan', 'Kowalski', 'j.kowalski@gmail.com', 'jank', 0);
 
-insert into opiekun values (null, 'Anna', 'Nowak', 'a.nowak@gmail.com', null, 0);
+insert into opiekun values (null, 'Anna', 'Nowak', 'a.nowak@gmail.com', 'annan', 0);
 
-insert into opiekun values (null, 'Adam', 'Kowalski', 'a.kowalski@gmail.com', null, 0);
+insert into opiekun values (null, 'Adam', 'Kowalski', 'a.kowalski@gmail.com', 'adamk', 0);
 
-insert into opiekun values (null, 'Wojciech', 'Zawadzki', 'w.zawadzki@gmail.com', null, 0);
+insert into opiekun values (null, 'Wojciech', 'Zawadzki', 'w.zawadzki@gmail.com', 'wojciechz', 0);
 
-insert into opiekun values (null, 'Piotr', 'Wisniewski', 'p.wisniewski@gmail.com', null, 0);
+insert into opiekun values (null, 'Piotr', 'Wisniewski', 'p.wisniewski@gmail.com', 'piotrw', 0);
 
-insert into opiekun values (null, 'Zofia', 'Jastrzebska', 'z.jastrzebska@gmail.com', null, 0);
+insert into opiekun values (null, 'Zofia', 'Jastrzebska', 'z.jastrzebska@gmail.com', 'zofiaj', 0);
 
-insert into opiekun values (null, 'Katarzyna', 'Misiak', 'k.misiak@gmail.com', null, 0);
+insert into opiekun values (null, 'Katarzyna', 'Misiak', 'k.misiak@gmail.com', 'katarzynam', 0);

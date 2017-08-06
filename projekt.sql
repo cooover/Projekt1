@@ -23,13 +23,13 @@ create view wyswietl_opiekuna as select nazwa_z, imie_o, nazwisko, mail_o from z
 create view czyj_album as select id_a, nazwa_a, zespoly.id_z, nazwa_z from zespoly, albumy where zespoly.id_z = albumy.id_z  order by albumy.id_a;
 create view najpopularniejszy_album as select id_a, nazwa_a, plytyCD, winyl, s_cyfrowa, (plytyCD+ winyl+ s_cyfrowa) as suma from albumy natural left join sprzedaz order by suma desc ;
 
-insert into opiekun values (null, 'Jan', 'Kowalski', 'j.kowalski@gmail.com', null, 0);
-insert into opiekun values (null, 'Anna', 'Nowak', 'a.nowak@gmail.com', null, 0);
-insert into opiekun values (null, 'Adam', 'Kowalski', 'a.kowalski@gmail.com', null, 0);
-insert into opiekun values (null, 'Wojciech', 'Zawadzki', 'w.zawadzki@gmail.com', null, 0);
-insert into opiekun values (null, 'Piotr', 'Wisniewski', 'p.wisniewski@gmail.com', null, 0);
-insert into opiekun values (null, 'Zofia', 'Jastrzebska', 'z.jastrzebska@gmail.com', null, 0);
-insert into opiekun values (null, 'Katarzyna', 'Misiak', 'k.misiak@gmail.com', null, 0);
+insert into opiekun values (null, 'Jan', 'Kowalski', 'j.kowalski@gmail.com', 'jank', 0);
+insert into opiekun values (null, 'Anna', 'Nowak', 'a.nowak@gmail.com', 'annan', 0);
+insert into opiekun values (null, 'Adam', 'Kowalski', 'a.kowalski@gmail.com', 'adamk', 0);
+insert into opiekun values (null, 'Wojciech', 'Zawadzki', 'w.zawadzki@gmail.com', 'wojciechz', 0);
+insert into opiekun values (null, 'Piotr', 'Wisniewski', 'p.wisniewski@gmail.com', 'piotrw', 0);
+insert into opiekun values (null, 'Zofia', 'Jastrzebska', 'z.jastrzebska@gmail.com', 'zofiaj', 0);
+insert into opiekun values (null, 'Katarzyna', 'Misiak', 'k.misiak@gmail.com', 'katarzynam', 0);
 select * from opiekun;
 
 insert into zespoly values (null, 'Zbigniew Preisner', 7, 'muzyka instrumentalna', 'z.preisner@gmail.com', null, 0);
@@ -115,3 +115,4 @@ select nazwa_a, nazwa_z, data_wydania from albumy natural left join zespoly wher
 select count(*) as ilosc_albumow, nazwa_z from albumy natural left join zespoly group by nazwa_z;
 select nazwa_z, nazwa_a, plytyCD from zespoly, albumy, sprzedaz where zespoly.id_z = albumy.id_z and albumy.id_a = sprzedaz.id_a;
 select nazwa_z, nazwa_a, plytyCD from zespoly natural join albumy natural join sprzedaz;
+select id_o from opiekun where mail_o='j.kowalski' and haslo_o='jank';

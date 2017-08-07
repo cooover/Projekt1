@@ -33,10 +33,10 @@ insert into opiekun values (null, 'Katarzyna', 'Misiak', 'k.misiak@gmail.com', '
 select * from opiekun;
 
 insert into zespoly values (null, 'Zbigniew Preisner', 7, 'muzyka instrumentalna', 'z.preisner@gmail.com', null, 0);
-insert into zespoly values (null, 'Brodka', 7, 'pop', 'm_brodka@gmail.com', null, 0);
+insert into zespoly values (null, 'Brodka', 7, 'pop', 'm.brodka@gmail.com', null, 0);
 insert into zespoly values (null, 'Michal Urbaniak',3, 'jazz', 'm.urbaniak@gmail.com', null, 0);
 insert into zespoly values (null, 'Leszek Mozdzer', 5, 'jazz', 'l.mozdzer@gmail.com',null, 0);
-insert into zespoly values (null, 'Dawid Podsiadlo', 2, 'indie', 'd,podsiadlo@gmail.com', null, 0);
+insert into zespoly values (null, 'Dawid Podsiadlo', 2, 'indie', 'd.podsiadlo@gmail.com', null, 0);
 insert into zespoly values (null, 'Myslovitz', 5, 'rock', 'myslovitz@gmail.com', null, 0);
 insert into zespoly values (null, 'Lao Che', 3,'rock', 'lao.che@gmail.com', null, 0);
 insert into zespoly values (null, 'The Dumplings', 4, 'electropop', 'the.dumplings@gmail.com', null, 0); 

@@ -32,8 +32,8 @@ insert into opiekun values (null, 'Zofia', 'Jastrzebska', 'z.jastrzebska@gmail.c
 insert into opiekun values (null, 'Katarzyna', 'Misiak', 'k.misiak@gmail.com', 'katarzynam', 0);
 select * from opiekun;
 
-insert into zespoly values (null, 'Zbigniew Preisner', 7, 'muzyka instrumentalna', 'z.preisner@gmail.com', null, 0);
-insert into zespoly values (null, 'Brodka', 7, 'pop', 'm.brodka@gmail.com', null, 0);
+insert into zespoly values (null, 'Zbigniew Preisner', 7, 'muzyka instrumentalna', 'z.preisner@gmail.com', 123, 0);
+insert into zespoly values (null, 'Brodka', 7, 'pop', 'm.brodka@gmail.com', 456, 0);
 insert into zespoly values (null, 'Michal Urbaniak',3, 'jazz', 'm.urbaniak@gmail.com', null, 0);
 insert into zespoly values (null, 'Leszek Mozdzer', 5, 'jazz', 'l.mozdzer@gmail.com',null, 0);
 insert into zespoly values (null, 'Dawid Podsiadlo', 2, 'indie', 'd.podsiadlo@gmail.com', null, 0);
@@ -104,7 +104,7 @@ select * from wyswietl_opiekuna;
 select * from czyj_album;
 select * from najpopularniejszy_album;
  # wyswietla nazwy zespolow przy albumach w kolejnosci od najlepiej sie sprzedajacego:
-select czyj_album.nazwa_a, suma, nazwa_z, plytyCD from najpopularniejszy_album, czyj_album where czyj_album.id_a = najpopularniejszy_album.id_a order by suma desc;
+select czyj_album.nazwa_a, suma, nazwa_z, plytyCD from najpopularniejszy_album, czyj_album where czyj_album.id_a = najpopularniejszy_album.id_a and id_z='1' order by suma desc;
 # wyswietla albumy wraz z nazwa zespolu w kolejnosci od najwiekszej ilosci sprzedanych
 #select nazwa_z, nazwa_a, plytyCD, winyl, s_cyfrowa, suma from albumy natural left join zespoly natural right join najpopularniejszy_album order by suma desc;
 # wyswietla albumy wraz z nazwami zespolow od najswiezszego:
